@@ -1,3 +1,15 @@
+
+---
+title: AI Skin Specialist
+emoji: 🩺
+colorFrom: blue
+colorTo: purple
+sdk: gradio
+sdk_version: 6.30.0
+app_file: app.py
+pinned: false
+---
+
 # AI Skin Specialist
 
 An AI-powered skin consultation assistant that accepts a patient's voice recording and a skin image, transcribes the patient's concern, generates general skin-care guidance using a vision-capable Groq model, and converts the response into audio using Deepgram text-to-speech.
