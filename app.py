@@ -1,5 +1,5 @@
 from pathlib import Path
-
+import os
 import gradio as gr
 
 
@@ -618,5 +618,15 @@ with gr.Blocks(title=APP_TITLE) as iface:
 
 
 
+
 if __name__ == "__main__":
-    iface.launch(debug=True, css=CSS, theme=gr.themes.Base())
+    port = int(os.environ.get("PORT", 7860))
+
+    iface.launch(
+        server_name="0.0.0.0",
+        server_port=port,
+        debug=True,
+        css=CSS,
+        theme=gr.themes.Base()
+    )
+
